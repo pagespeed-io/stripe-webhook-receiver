@@ -77,7 +77,7 @@ func webhookHandler(rw http.ResponseWriter, req *http.Request) {
 	}).Info("Received incoming request")
 
 	switch r.Type {
-	case "customer.card.created":
+	case "customer.source.created":
 		m := &pushover.Message{
 			Message: fmt.Sprintf("%s added a %s card.", r.Data.Object.Name, r.Data.Object.Brand),
 			Title:   fmt.Sprintf("%s", r.Type),
