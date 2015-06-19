@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/pagespeed-io/stripe-webhook-receiver"
 
 import (
 	"encoding/json"
